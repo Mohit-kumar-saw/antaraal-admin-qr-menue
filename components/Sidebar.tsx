@@ -34,9 +34,7 @@ export const Sidebar = () => {
             <Image src="/images/buddha.png" alt="Logo Icon" width={64} height={64} className="object-cover w-full h-full" priority />
           </div>
           <div className="text-center">
-            <div className="relative w-40 h-16 mb-1">
-              <Image src="/images/logo.png" alt="Antaraal Resort & Spa" fill className="object-contain" priority />
-            </div>
+
             <span className="text-[9px] font-black text-primary uppercase tracking-[0.4em] leading-tight opacity-40">Resort & Spa</span>
           </div>
         </Link>
@@ -88,8 +86,8 @@ interface SidebarLinkProps {
 
 const SidebarLink = ({ icon, label, active, href }: SidebarLinkProps) => {
   return (
-    <Link 
-      href={href} 
+    <Link
+      href={href}
       className={cn(
         "flex items-center gap-4 px-6 py-4 rounded-2xl transition-all duration-500 group relative overflow-hidden",
         active
@@ -104,11 +102,11 @@ const SidebarLink = ({ icon, label, active, href }: SidebarLinkProps) => {
         {icon}
       </span>
       <span className="font-bold tracking-tight">{label}</span>
-      
+
       {active && (
         <motion.div
-            layoutId="sidebar-active-indicator"
-            className="absolute right-6 w-1.5 h-1.5 rounded-full bg-white shadow-[0_0_8px_rgba(255,255,255,0.5)]"
+          layoutId="sidebar-active-indicator"
+          className="absolute right-6 w-1.5 h-1.5 rounded-full bg-white shadow-[0_0_8px_rgba(255,255,255,0.5)]"
         />
       )}
     </Link>
