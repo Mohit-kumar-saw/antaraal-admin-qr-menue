@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useAdmin } from "@/context/AdminContext";
 import { cn } from "@/lib/utils";
 
-const API_BASE_URL = "http://localhost:4001/api";
+const API_BASE_URL = "https://qr-menue-backend.onrender.com/api";
 
 export default function CategoriesPage() {
   const { categories, menuItems, refreshData, loading } = useAdmin();
@@ -70,7 +70,7 @@ export default function CategoriesPage() {
         ) : (
           categories.map((cat) => {
             // Count items in this category
-            const itemCount = menuItems.filter(item => 
+            const itemCount = menuItems.filter(item =>
               item.category?._id === cat._id || item.category === cat._id
             ).length;
 
@@ -82,7 +82,7 @@ export default function CategoriesPage() {
               >
                 {/* Background Accent */}
                 <div className="absolute -right-4 -top-4 w-24 h-24 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-colors" />
-                
+
                 <div className="flex flex-row md:flex-col h-full items-center md:items-start gap-4 md:gap-0">
                   <div className="flex justify-between items-start md:mb-6 w-auto md:w-full">
                     <div className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-primary to-primary/80 rounded-xl md:rounded-2xl flex items-center justify-center text-white font-serif font-semibold text-xl md:text-2xl shadow-lg shadow-primary/20 group-hover:scale-110 transition-transform duration-500 flex-shrink-0">

@@ -5,7 +5,7 @@ import { Download, QrCode as QrIcon, Printer, Share2 } from "lucide-react";
 import { QRCodeSVG } from "qrcode.react";
 import { cn } from "@/lib/utils";
 
-const FRONTEND_URL = "http://localhost:4000";
+const FRONTEND_URL = "https://antaraal-qr-meue.vercel.app";
 
 export default function QRPage() {
   const downloadQRCode = () => {
