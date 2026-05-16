@@ -28,14 +28,14 @@ export const Sidebar = () => {
 
   return (
     <aside className="hidden md:flex w-72 bg-white border-r border-zinc-100 flex-col flex-shrink-0 animate-in slide-in-from-left duration-700">
-      <div className="p-8 flex flex-col items-center gap-6">
-        <Link href="/" className="group flex flex-col items-center gap-2">
-          <div className="w-16 h-16 bg-zinc-950 rounded-[2rem] flex items-center justify-center shadow-2xl transition-all duration-700 overflow-hidden border border-white/20 group-hover:scale-110 ">
+      <div className="p-8">
+        <Link href="/" className="group flex items-center gap-4">
+          <div className="w-14 h-14 bg-zinc-950 rounded-[1.25rem] flex items-center justify-center shadow-2xl transition-all duration-700 overflow-hidden border border-white/20 group-hover:scale-110">
             <Image src="/images/buddha.png" alt="Logo Icon" width={64} height={64} className="object-cover w-full h-full" priority />
           </div>
-          <div className="text-center">
-
-            <span className="text-[9px] font-black text-primary uppercase tracking-[0.4em] leading-tight opacity-40">Resort & Spa</span>
+          <div>
+            <h1 className="font-serif font-semibold text-lg tracking-tight leading-none text-zinc-900">Antaraal <span className="text-zinc-500">Resort</span></h1>
+            <p className="text-[8px] font-black text-zinc-400 uppercase tracking-[0.4em] leading-none mt-2">A Village Resort</p>
           </div>
         </Link>
       </div>

@@ -37,11 +37,14 @@ export const Header = () => {
     <header className="h-24 bg-zinc-950 relative border-b border-white/10 px-6 md:px-10 flex items-center justify-between sticky top-0 z-30 transition-all">
       <Image src="/background.png" alt="Header Background" fill className="object-cover opacity-40 absolute inset-0" priority />
 
-      <div className="flex items-center gap-4 md:hidden relative z-10">
-        <div className="w-10 h-10 bg-white/10 backdrop-blur-md rounded-[1rem] flex items-center justify-center shadow-lg overflow-hidden border border-white/20">
-          <Image src="/images/buddha.png" alt="Logo" width={32} height={32} className="object-cover w-full h-full" priority />
+      <div className="flex items-center gap-3 md:hidden relative z-10">
+        <div className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center shadow-lg overflow-hidden border border-white/20">
+          <Image src="/images/buddha.png" alt="Logo" width={40} height={40} className="object-cover w-full h-full" priority />
         </div>
-        <h2 className="text-xl font-serif font-semibold tracking-tight capitalize text-white">{title}</h2>
+        <div>
+          <h1 className="font-serif font-semibold text-lg tracking-tight leading-none text-white">Antaraal <span className="text-white/60">Resort</span></h1>
+          <p className="text-[7px] font-black text-white/40 uppercase tracking-[0.4em] leading-none mt-1">A Village Resort</p>
+        </div>
       </div>
 
       <div className="hidden md:block relative z-10">
