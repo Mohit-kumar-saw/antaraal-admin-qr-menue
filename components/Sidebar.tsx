@@ -29,8 +29,8 @@ export const Sidebar = () => {
   return (
     <aside className="hidden md:flex w-72 bg-white border-r border-zinc-100 flex-col flex-shrink-0 animate-in slide-in-from-left duration-700">
       <div className="p-8 flex flex-col items-center gap-6">
-        <Link href="/" className="group flex flex-col items-center gap-4">
-          <div className="w-16 h-16 bg-zinc-950 rounded-[2rem] flex items-center justify-center shadow-2xl transition-all duration-700 overflow-hidden border border-white/20 group-hover:scale-110 group-hover:rotate-6">
+        <Link href="/" className="group flex flex-col items-center gap-2">
+          <div className="w-16 h-16 bg-zinc-950 rounded-[2rem] flex items-center justify-center shadow-2xl transition-all duration-700 overflow-hidden border border-white/20 group-hover:scale-110 ">
             <Image src="/images/buddha.png" alt="Logo Icon" width={64} height={64} className="object-cover w-full h-full" priority />
           </div>
           <div className="text-center">
@@ -40,7 +40,7 @@ export const Sidebar = () => {
         </Link>
       </div>
 
-      <nav className="flex-1 px-6 py-6 space-y-4">
+      <nav className="flex-1 px-6 py-0 space-y-4">
         <SidebarLink
           icon={<LayoutDashboard size={22} />}
           label="Dashboard"
