@@ -23,19 +23,19 @@ export const Header = () => {
 
   const title = getTitle();
 
-  const categorySuggestions = categories.filter(c => 
+  const categorySuggestions = categories.filter(c =>
     c.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
-  
-  const itemSuggestions = menuItems.filter(item => 
+
+  const itemSuggestions = menuItems.filter(item =>
     item.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   const hasSuggestions = searchQuery.length > 0 && (categorySuggestions.length > 0 || itemSuggestions.length > 0);
 
   return (
-    <header className="h-24 bg-zinc-950 relative border-b border-white/10 px-6 md:px-10 flex items-center justify-between sticky top-0 z-30 transition-all">
-      <Image src="/background.png" alt="Header Background" fill className="object-cover opacity-40 absolute inset-0" priority />
+    <header className="h-24 bg-[#17281e] relative border-b border-white/10 px-6 md:px-10 flex items-center justify-between sticky top-0 z-30 transition-all">
+      {/* <Image src="/background.png" alt="Header Background" fill className="object-cover opacity-40 absolute inset-0" priority /> */}
 
       <div className="flex items-center gap-3 md:hidden relative z-10">
         <div className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center shadow-lg overflow-hidden border border-white/20">
@@ -97,7 +97,7 @@ export const Header = () => {
                     ))}
                   </div>
                 )}
-                
+
                 {itemSuggestions.length > 0 && (
                   <div className="p-3 pt-0">
                     <p className="text-[9px] font-black text-white/40 uppercase tracking-widest mb-2 px-2">Dishes</p>

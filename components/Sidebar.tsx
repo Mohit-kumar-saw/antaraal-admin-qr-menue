@@ -91,7 +91,7 @@ const SidebarLink = ({ icon, label, active, href }: SidebarLinkProps) => {
       className={cn(
         "flex items-center gap-4 px-6 py-4 rounded-2xl transition-all duration-500 group relative overflow-hidden",
         active
-          ? "bg-primary text-white shadow-2xl shadow-primary/20 translate-x-1"
+          ? "bg-[#17281e] text-white shadow-2xl shadow-primary/20 translate-x-1"
           : "text-zinc-400 hover:bg-primary/5 hover:text-primary"
       )}
     >
